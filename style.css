@@ -1,0 +1,17 @@
+.box {
+    width: 200px;
+    height: 200px;
+    border: 1px solid grey;
+}
+
+.box1 {
+    float: left;
+    background-color: yellow;
+    margin-right: 25px;
+}
+
+.box2 {
+    float: right;
+    background-color: red;
+    border-radius: 50%;
+}
