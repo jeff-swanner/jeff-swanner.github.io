@@ -1,12 +1,162 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Multiple CSS</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="style3.css">
-    </head>
-    <body>
-        <h1>Welcome to my website</h1>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jeff Swanner</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    </body>
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="particles-js"></div>
+    <div id="box">
+        <div class="box1 onlywide animated bounceOutLeft" style="animation-delay:1.7s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.9s;"></div>
+        <div class="box2 animated bounceOutRight" style="animation-delay:1.9s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.7s;"></div>
+    </div>
+    <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:2.2s;">About</a>
+    <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay:2.2s;">Portfolio</a>
+    <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay:2.2s;">Contact</a>
+    <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
+        <h1>Jeff Swanner</h1>
+        <h2>Software Developer / Mechanical Engineer</h2>
+        <table>
+                <tr>
+                    <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social" href="https://github.com/jeff-swanner"><i class="fab fa-github"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social" href="https://www.linkedin.com/in/jeff-swanner/"><i class="fab fa-linkedin"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social" href="mailto:jeffswanner93@gmail.com"><i class="fa fa-envelope"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.8s;"><a class="social" href="./assets/JeffSwanner_Resume.pdf" target="_blank"><i class="fa fa-file"></i></a></td>
+                </tr>
+        </table>
+    </div>
+    <div id="work_container" class="container">
+        <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
+        <h1>Portfolio</h1>
+        <section>
+            <h2>Coding Projects</h2>
+            <div class="row">
+                <div class="column">
+                    <div class="content">
+                        <a href="https://jeff-swanner.github.io/Word-Guess-Game/">
+                            <img class="portfolioimage" src="assets/images/Hangman.png" alt="Word Guess Game">
+                            <div class="centered">Hangman Project</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="content">
+                        <a href="https://jeff-swanner.github.io/unit-4-game/">
+                            <img class="portfolioimage" src="assets/images/StarWars.jpg" alt="Unit 4 Game">
+                            <div class="centered">Star Wars RPG</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <div class="content">
+                        <a href="https://jeff-swanner.github.io/TriviaGame/">
+                            <img class="portfolioimage" src="assets/images/SharkBackground.jpg" alt="Shark Trivia">
+                            <div class="centered">Shark Week Trivia</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="content">
+                        <a href="https://jeff-swanner.github.io/Giphy/">
+                            <img class="portfolioimage" src="assets/images/Giphy.png" alt="Giphy">
+                            <div class="centered">Giphy <br> API</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <div class="content">
+                        <a href="https://jeff-swanner.github.io/Train-Scheduler/">
+                            <img class="portfolioimage" src="assets/images/Train.jpg" alt="Train Scheduler">
+                            <div class="centered">Train Scheduler</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="content">
+                        <a href="https://github.com/jeff-swanner/Bamazon-App">
+                            <img class="portfolioimage" src="assets/images/bamazon.png" alt="Bamazon App">
+                            <div class="centered">Bamazon <br> App</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <div class="content">
+                        <a href="https://fathomless-forest-49500.herokuapp.com/">
+                            <img class="portfolioimage" src="assets/images/friendfinder.png" alt="Friend Finder">
+                            <div class="centered">Friend <br> Finder</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="content">
+                        <a href="https://evening-caverns-06584.herokuapp.com/">
+                            <img class="portfolioimage" src="assets/images/burger.png" alt="Burger Logger">
+                            <div class="centered">Burger <br> Logger</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div id="about_container" class="container">
+            <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+            <h1>about.</h1>
+            <section>
+                <h2>about me</h2>
+                <p>
+                    My name is Jeff Swanner and I'm a project engineer and aspiring software developer based out of Raleigh, NC. I currently work for a design/build contractor that provides ammonia refrigeration systems for the food processing and biomedical industries. My educational background includes a B.S. in Mechanical Engineering from N.C. State, full stack development skills obtained from the UNC coding bootcamp, and a continuous drive for learning and implementing cutting edge technologies.
+                </p>
+                <p>
+                    Working in a fast pace engineering environment, at times managing upwards of 20 projects concurrently, has taught me many soft skills including; time managment, interpersonal skills, and the flexiblity to adapt to a dynamic workplace. I believe these skills are directly transferrable to most any position in the corporate world. Please see my portfolio secion for more info on my past and current coding projects.
+                </p>
+                <p>
+                    In my free time I enjoy composing music, exploring the great outdoors, and occasionally lifting heavy things.
+                </p>
+            </section>
+        </div>
+          <div id="contact_container" class="container">
+            <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
+            <h1>contact.</h1>
+            <section>
+                <h2>contact me</h2>
+                <p>
+                    <form>
+                        <input type="text" placeholder="name" required>
+                        <input type="email" placeholder="email" required><br>
+                        <textarea placeholder="your message" required rows="5"></textarea><br>
+                        <button class="btn_one">send</button>
+                    </form> 
+                </p>
+            </section>
+        </div>
+    <script src="index.js" type="text/javascript"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
 </html>
