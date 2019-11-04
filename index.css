@@ -7,7 +7,7 @@ body {
     background-size:cover;
     width:100vw;
     height:100vh;
-    overflow:hidden;
+    /* overflow:hidden; */
     font-family: 'Josefin Sans', sans-serif;
 }
 #loading {
@@ -211,39 +211,6 @@ body {
 .container p {
     font-size:21px;
 }
-.btn_one {
-    font-size:18px;
-    font-family: 'Josefin Sans', sans-serif;
-    color:#fff;
-    background:transparent;
-    border:3px solid #fff;
-    padding:8px 40px;
-    border-radius:80px;
-    font-weight:bold;
-    margin:2vh 10px;
-    transition:0.4s ease-in-out;
-}
-.btn_one:hover {
-    cursor:pointer;
-    color:rgb(255, 50, 50);
-    background:#fff;
-}
-.btn_two {
-    font-size:18px;
-    font-family: 'Josefin Sans', sans-serif;
-    color:rgb(255, 50, 50);
-    background:#fff;
-    border:3px solid #fff;
-    padding:8px 40px;
-    border-radius:80px;
-    font-weight:bold;
-    margin:2vh 10px;
-    transition:0.4s ease-in-out;
-}
-.btn_two:hover {
-    cursor:pointer;
-    padding:8px 60px;
-}
 .container form input {
     width:46%;
     margin:20px 1%;
@@ -370,6 +337,7 @@ body {
     padding: 10px;
     grid-gap: 50px;
     width: 80%;
+    justify-items: center;
 }
 .grid-item {
     background-color: rgba(255, 255, 255, 0.8);
